@@ -1545,6 +1545,10 @@ GLFWbool _glfwCreateWindowWin32(_GLFWwindow* window,
         }
     }
 
+    // For now just force dark mode for all windows
+    BOOL USE_DARK_MODE = 1;
+    DwmSetWindowAttribute(window->win32.handle, 20, &USE_DARK_MODE, (sizeof(USE_DARK_MODE)));
+
     return GLFW_TRUE;
 }
 
