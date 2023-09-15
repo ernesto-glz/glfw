@@ -1315,6 +1315,11 @@ extern "C" {
  *  Wayland specific [init hint](@ref GLFW_WAYLAND_LIBDECOR_hint).
  */
 #define GLFW_WAYLAND_LIBDECOR       0x00053001
+/*! @brief Windows specific init hint.
+ *
+ *  Windows specific [init hint](@ref GLFW_WIN32_MESSAGES_IN_FIBER_hint).
+ */
+#define GLFW_WIN32_MESSAGES_IN_FIBER 0x00051003
 /*! @} */
 
 /*! @addtogroup init
